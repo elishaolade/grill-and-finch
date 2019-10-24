@@ -1,0 +1,321 @@
+@import 'reset.css';
+
+
+/*
+Common header margins: 25px
+Content horizontal padding: 20px
+*/
+*,html,body{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+h1{
+  font-size:5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+h4{
+  font-size:2rem;
+}
+h5{
+  font-size:1.5rem;
+}
+body,html{
+  width: 100vw;
+  height:100vh;
+}
+
+/*Button*/
+.buttons{
+  margin-top:50px;
+}
+.button{
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  margin-right:5px;
+  color:#fff;
+  /*margin-top didnt work here?*/
+}
+.button.alternate-dark{
+  padding: 15px 20px;
+  background:black;
+  margin-right:5px;
+  color:#fff;
+  /*margin-top didnt work here?*/
+}
+.button:nth-child(2){
+  padding: 15px 20px;
+  background: #fff;
+  color: #ccc;
+  margin-right:5px;
+  /*margin-top didnt work here?*/
+}
+.button:last-child{
+  margin-top:50px;
+  margin-right:0;
+}
+/*header*/
+header{
+  padding:50px 20px;
+  position: relative;
+  background: white;
+  line-height: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 10;
+}
+header .logo{
+  position:absolute;
+}
+header .other-side{
+  display:inline-block;
+  float:right;
+}
+header .menu-opt{
+  display: inline-block;
+}
+header .menu-opt li{
+  display: inline-block;
+  margin-right: 25px;
+}
+header .booking-button{
+  text-transform: uppercase;
+  background: #ccc;
+  padding: 10px;
+}
+header .responsive-menu-button{
+  display: inline-block;
+  display:none;
+  background: #ccc;
+}
+#intro{
+  background:black;
+  height:100vh;
+  position: relative;
+}
+/*Rules for flickity*/
+.carousel{
+  background:#ccc;
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+}
+.carousel-cell{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  /* counter-increment: carousel-cell; */
+}
+.a{
+  background:red;
+}
+.b{
+  background:blue;
+}
+.center{
+  max-width:60%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.s-center{
+  vertical-align: middle;
+  max-width:60%;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+}
+#description{
+  text-align:center;
+  padding: 50px 0;
+}
+#specials{
+  background: #ccc;
+  text-align: center;
+  padding: 50px 0;
+}
+#specials .title{
+  margin-bottom: 25px;
+}
+/* #specials .col-2{
+  display:inline-block;
+  height:100px;
+  width:35%;
+  min-height:500px;
+  background: white;
+  margin: 0 10px;
+  overflow: auto;
+  text-align: center;
+  See why 154 is needed
+  overflow: ;
+}*/
+#specials .col-2 .title-area{
+  padding:40px 30px;
+}
+#specials .col-2 .title-area .title{
+  font-size: 1.7rem;
+}
+#specials .col-2 .dishes{
+  text-align:left;
+}
+#specials .col-2 .dishes .dish .dish-title{
+  float:left;
+  text-transform: uppercase;
+}
+#specials .col-2 .dishes .dish .dish-and-price-section{
+  display: block;
+  padding:10px;
+  width:100%;
+}
+#specials .col-2 .dishes .dish .dish-and-price-section::after{
+  content:'';
+  overflow:auto;
+  clear: both;
+}
+#specials .col-2 .dishes .dish .dish-price{
+  float:right;
+  text-transform: uppercase;
+}
+#specials .col-2 .dishes .dish .desc-section{
+  display: block;
+}
+/*
+Dish Design
+*/
+.col-2{
+  display:inline-block;
+  width:600px;
+  margin:0 auto;
+  background:white;
+  padding:20px;
+  text-align: center;
+  height:1000px;
+  overflow:hidden;
+  margin-right:20px;
+}
+.col-2:last-child{
+  margin-right:0;
+}
+.dish{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  margin-top:20px;
+  padding: 15px 0;
+
+}
+.dish .title-section .dish-title{
+  font-weight: 700;
+}
+.dish p{
+  font-size:.8rem;
+  color:gray;
+}
+.container .title-section{
+  display:flex;
+  justify-content: space-between;
+  text-align:left;
+  width:100%;
+}
+.container .title-section .dish-title{
+  font-weight:700;
+}
+.container .title-section .dish-price{
+  float:right;
+}
+.dish h1{
+  font-style:italic;
+  font-size:2rem;
+  margin-bottom: 50px;
+}
+
+#team{
+  text-align: center;
+  padding: 50px 0;
+}
+#team .section-title{
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+#team .team-content{
+  display:block;
+  overflow: hidden;
+}
+#team .team-member{
+  display:inline-block;
+  max-width:300px;
+  margin-right: 25px;
+}
+#team .team-member:last-child{
+  margin-right: 0;
+}
+#team .team-member img{
+  width:100%;
+}
+#team .title-section .chef-name{
+  font-size:1.5rem;
+  font-weight: 700;
+  margin:15px 0;
+}
+#team .title-section .chef-title{
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#team .title-section .chef-desc{
+  line-height: 25px;
+}
+
+#reservations{
+  background: #ccc;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#reservations .desc{
+  display: block;
+  width:70%;
+  text-align: center;
+}
+#reservations{
+  text-align: center;
+}
+#reservations .section-title{
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#reservations p{
+  overflow: hidden;
+  width:60%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  .col-2{
+    display:block;
+    width:90%;
+    margin:0 auto;
+    background:white;
+    padding:20px;
+    text-align: center;
+    /* overflow:hidden; */
+    margin-bottom: 20px;
+  }
+  .col-2:last-child{
+    margin:0 auto;
+  }
+  .buttons .button{
+    display: block;
+    width:100%;
+  }
+}
