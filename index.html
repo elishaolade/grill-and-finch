@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <script src="https://kit.fontawesome.com/717158bd15.js" crossorigin="anonymous"></script>
     <script src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <section id="intro">
-        <header>
+        <header class="header">
           <span class="logo">logo</span>
           <div class="other-side">
             <ul class="menu-opt">
@@ -38,34 +39,38 @@
               </li>
             </ul>
             <a class="booking-button" href="#">book a table</a>
-            <div class="responsive-menu-button">
-              btn
-            </div>
+          </div>
+          <div class="responsive-menu-button">
+            <i class="fas fa-bars"></i>
           </div>
         </header>
         <div class="carousel" data-flickity='{ "autoPlay": true }'>
           <div class="carousel-cell">
-            <div class="center">
-              <h1>Best Restaurant 50 Years Running</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="buttons">
-                <a class="button" href="#">Reserve a Table</a>
-                <a class="button" href="#">View Menu</a>
+            <div class="background">
+              <div class="tint">
+                <div class="center">
+                  <h1 class="subject">Best Restaurant 50 Years Running</h1>
+                  <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="buttons">
+                    <a class="button" href="#">Reserve a Table</a>
+                    <a class="button" href="#">View Menu</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="carousel-cell">
-            <div class="center">
-              <h1>Eat With Us</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="buttons">
-                  <a class="button" href="#">View Menu</a>
+            <div class="background-alternate">
+                <div class="tint">
+                  <div class="center">
+                    <h1 class="subject">Eat With Us</h1>
+                    <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="buttons">
+                        <a class="button" href="#">View Menu</a>
+                      </div>
+                  </div>
                 </div>
             </div>
           </div>
@@ -73,188 +78,191 @@
     </section>
     <section id="description">
       <div class="s-center">
-        <h4>Welcome to delicio</h4>
-        <h5>Premium WordPress Theme for Restaurants & Coffee Shops</h5>
+        <h4 class="weight">Welcome to delicio</h4>
+        <h5 class="secondary">Premium WordPress Theme for Restaurants & Coffee Shops</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <div class="buttons">
-            <a class="button alternate-dark" href="#">View Menu</a>
+            <a class="button alternate-dark button-text" href="#">View Menu</a>
           </div>
       </div>
     </section>
     <section id="specials">
-      <h4 class="title">our specials</h4>
-
-      <div class="col-2">
-        <div class="title-area">
-          <span class="title">New Entries</span>
-        </div>
-        <!--Dish items-->
-        <div class="dishes">
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">POACHED SALMON SALAD</span>
-              <span class="dish-price">$19.95</span>
-            </div>
-            <p>pomelo, baby kale, pomegranate, sweet chilli vinaigrette</p>
+      <div class="tint">
+        <h4 class="title weight">our specials</h4>
+        <h5 class="secondary">Explore new flavors from our special menu.</h5>
+        <div class="col-2">
+          <div class="title-area">
+            <span class="title">New Entries</span>
           </div>
+          <!--Dish items-->
+          <div class="dishes">
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">POACHED SALMON SALAD</span>
+                <span class="dish-price">$19.95</span>
+              </div>
+              <p>pomelo, baby kale, pomegranate, sweet chilli vinaigrette</p>
+            </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
 
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
             </div>
-            <p>rate potatoes, tomato and olive salsa</p>
           </div>
-        </div>
-        <div class="buttons">
-          <a class="button alternate-dark"href="#">view full menu</a>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="title-area">
-          <span class="title">New Entries</span>
-        </div>
-        <!--Dish items-->
-        <div class="dishes">
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">POACHED SALMON SALAD</span>
-              <span class="dish-price">$19.95</span>
-            </div>
-            <p>pomelo, baby kale, pomegranate, sweet chilli vinaigrette</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
-          </div>
-
-          <div class="dish">
-            <div class="title-section">
-              <span class="dish-title">GRILLED LAMB CUTLETS</span>
-              <span class="dish-price">$24.00</span>
-            </div>
-            <p>rate potatoes, tomato and olive salsa</p>
+          <div class="buttons">
+            <a class="button alternate-dark"href="#">view full menu</a>
           </div>
         </div>
-        <div class="buttons">
-          <a class="button alternate-dark"href="#">view full menu</a>
+        <div class="col-2">
+          <div class="title-area">
+            <span class="title">New Entries</span>
+          </div>
+          <!--Dish items-->
+          <div class="dishes">
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">POACHED SALMON SALAD</span>
+                <span class="dish-price">$19.95</span>
+              </div>
+              <p>pomelo, baby kale, pomegranate, sweet chilli vinaigrette</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+
+            <div class="dish">
+              <div class="title-section">
+                <span class="dish-title">GRILLED LAMB CUTLETS</span>
+                <span class="dish-price">$24.00</span>
+              </div>
+              <p>rate potatoes, tomato and olive salsa</p>
+            </div>
+          </div>
+          <div class="buttons">
+            <a class="button alternate-dark"href="#">view full menu</a>
+          </div>
         </div>
+
       </div>
     </section>
 
     <section id="team">
-      <span class="section-title">our team</span>
+      <h1 class="weight">our team</h1>
       <div class="team-content">
         <div class="team-member">
           <img src="img\chef-by-stove.png" alt="">
@@ -296,16 +304,97 @@
     </section>
 
     <section id="reservations">
-      <span class="section-title">reservations</span>
-      <p>We accept a limited number of reservations up to one month in advance for parties of up to ten guests.
-Prefer to make your reservation via phone? You can make a reservations by calling (415) 986-3274 between 10am and noon.</p>
-      <div class="buttons">
-        <a class="button" href="#">make a reservation</a>
+      <div class="tint">
+        <h1 class="weight">reservations</h1>
+        <p>We accept a limited number of reservations up to one month in advance for parties of up to ten guests.
+  Prefer to make your reservation via phone? You can make a reservations by calling (415) 986-3274 between 10am and noon.</p>
+        <div class="buttons">
+          <a class="button" href="#">make a reservation</a>
+        </div>
       </div>
     </section>
     <section id="location">
-      <div class="">
-
+      <div class="loc-desc">
+        <div class="weight">
+          location
+        </div>
+        <div class="address">
+          63 Ellis St, San Francisco, CA, 415-986-3274
+        </div>
+      </div>
+      <div class="map"></div>
+      <script type="text/javascript">
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementsByClassName('map')[0], {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkjNwYhtF3vnJx61JUeWAP-h5HBg4-5CU&callback=initMap">
+      </script>
+    </section>
+    <section id="footer">
+      <div class="content-container">
+        <div class="section">
+          <div class="title">
+            Directions
+          </div>
+          <div class="loc-name">
+            John's Grill
+          </div>
+          <div class="directions">
+            123 AVC Blvd. Nevada US 7777
+          </div>
+          <div class="phone">
+            (415) 986-3274
+          </div>
+        </div>
+        <div class="section">
+          <div class="title">
+            Opening Times
+          </div>
+          <div class="days-open">
+            Monday-Saturday<br>
+            11:00 am to 10:00 pm
+          </div>
+          <div class="days-open">
+            Sunday<br>
+            12:00pm to 10:00pm
+          </div>
+        </div>
+        <div class="section">
+          <div class="title">
+            Follow Us
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook"></i></li>
+                </a>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-google-plus-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </body>
